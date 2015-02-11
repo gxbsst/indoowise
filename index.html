@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/base.css"/>
+    <link rel="stylesheet" href="stylesheets/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css"/>
+    <!--<script src="javascripts/jquery.min.js"></script>-->
+    <script src="javascripts/jquery.min.js"></script>
+    <!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="javascripts/jquery.easings.min.js"></script>
+    <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="javascripts/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
+
+
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section">
+        <div class="container">
+            <div class="content">
+                <div class="header">
+                    <a href=""><img src="images/23.png" alt=""/></a>
+
+                    <h1><a href="">IndoorWise</a></h1>
+                    <ul>
+                        <li><a class="nav" href="">首页</a></li>
+                        <li><a href="">服务</a></li>
+                        <li><a href="">应用</a></li>
+                        <li><a href="">开发者</a></li>
+                        <li><a href="">下载</a></li>
+                        <li><a href="">关于</a></li>
+                        <li class="nav1"><a href="">登陆</a></li>
+                        <li class="nav2"><a href="">注册</a></li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <img class="img" src="images/25.png" alt=""/>
+                    <img class="img1" src="images/26.png" alt=""/>
+                    <img class="img2" src="images/27.png" alt=""/>
+                    <img class="img3" src="images/28.png" alt=""/>
+                    <img class="img4" src="images/29.png" alt=""/>
+                    <img class="img5" src="images/30.png" alt=""/>
+                    <img class="img6" src="images/31.png" alt=""/>
+                </div>
+                <div class="box2">
+                    <h1>微信摇一摇.随云近场感应系统</h1>
+
+                    <p>精确定位线下用户，提供个性化服务</p>
+
+                    <p>为用户提供更酷更丰富的互动体验</p>
+
+                    <p>与微信公众平台，微信支付，卡券等无缝打通</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section_1">
+        <div class="container">
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+    <div class="section section_2">
+        <div class="container">
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+    <div class="section section_3">
+        <div class="container">
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+    <div class="section section_4">
+        <div class="container">
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            'verticalCentered': false,
+            'css3': true,
+//            'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+            'navigation': true,
+            'navigationPosition': 'right',
+            'navigationTooltips': [''],
+            'afterRender': function(){
+                $('body').addClass('fp-viewing-0')
+            },
+            'resize': false
+        });
+    });
+
+</script>
+</html>
