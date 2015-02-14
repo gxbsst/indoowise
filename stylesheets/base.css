@@ -1,7 +1,7 @@
 .section {
     position: relative;
     text-align: center;
-    background-image: url("../images/24.png");
+    background-image: url("../images/beijing1.gif");
     background-origin: content-box;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -104,3 +104,21 @@
 }
 
 
+/*section_1*/
+
+
+.box{
+    height: 850px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-image: url("../images/beijing2.gif");
+}
+
+.box h1{
+    margin-top: 0;
+    padding-top: 60px;
+    font-weight: 300;
+    color: #464b43;
+    font-size: 38px;
+}
